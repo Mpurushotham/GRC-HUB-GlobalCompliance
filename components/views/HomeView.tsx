@@ -1,4 +1,3 @@
-
 import React, { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { Globe, Lock, ArrowRight, LayoutGrid, Zap, PieChart, Cloud, Cpu, Bug } from 'lucide-react';
@@ -6,7 +5,7 @@ import { Framework } from '../../types';
 
 interface Props {
   onExplore: () => void;
-  onNavigate: (tab: 'risk-management' | 'cloud-grc' | 'ai-defense' | 'ai-vuln-mgmt') => void;
+  onNavigate: (tab: 'risk-management' | 'cloud-grc' | 'ai-defense' | 'ai-vuln-mgmt' | 'cyber-defense') => void;
   featuredFrameworks: Framework[];
   onFrameworkClick: (id: string) => void;
 }
@@ -84,7 +83,7 @@ const HomeView: React.FC<Props> = ({ onExplore, onNavigate, featuredFrameworks, 
         </motion.div>
       </section>
 
-      {/* New Advanced Tools Section */}
+      {/* Advanced Tools Section */}
       <section>
         <div className="flex justify-between items-end mb-8">
           <div>
